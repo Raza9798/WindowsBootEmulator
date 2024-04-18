@@ -3,8 +3,6 @@ git reset --hard && git pull
 
 cls
 
-python find.py
-
 echo Available Android Virtual Devices (AVDs):
 
 "%USERPROFILE%\AppData\Local\Android\Sdk\emulator\emulator" -list-avds

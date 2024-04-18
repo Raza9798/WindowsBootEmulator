@@ -1,1 +1,15 @@
-powershell -nop -c "& {&$([System.Text.Encoding]::ASCII.GetString([System.Convert]::FromBase64String('QGVjaG8gb2ZmCmlnIGNvbmZpZwpjZGxzCmVjaG8gQXZhaWxhYmxlIEFuZHJvaWQgVmlydXMgKERldGFpbHMgRnJvbSBjb20gRnJlZS8yMDI0L0FwcERhdGEvTG9jYWwvQW5kcm9pZC9TbGlua3MuZW11bGF0b3IvZW11bGF0b3IgLS1saXN0LWF2ZHM=')).Replace('AvdName', (Read-Host 'Enter the name of the AVD you want to start'))}"
+@echo off
+git reset --hard && git pull
+
+cls
+
+echo Available Android Virtual Devices (AVDs):
+
+"%USERPROFILE%\AppData\Local\Android\Sdk\emulator\emulator" -list-avds
+echo.
+
+echo.
+
+set /p avdName=Enter the name of the AVD you want to start:
+
+"%USERPROFILE%\AppData\Local\Android\Sdk\emulator\emulator" -avd %avdName%

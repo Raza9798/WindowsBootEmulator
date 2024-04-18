@@ -12,4 +12,4 @@ Before using this script, make sure you have the following prerequisites install
 
 1. Clone or download this repository to your local machine.
 
-2. navigate to the start_emulator.bat file directory and open it.
+2. navigate to the `WindowsBootEmulator` directory and open `RunEmulator.bat` it.

